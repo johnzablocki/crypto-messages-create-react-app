@@ -1,0 +1,17 @@
+1. Create contract with public messages
+2. Add setMessage
+3. Track message history with string array, try to return
+4. Update message history to mapping(address => string[]);
+5. Return messages history, make not of keys and mappings
+6. Create message setter address[] public
+7. Create get message setter method, mark message setter private
+8. Create message request struct with message, approval status, amount, requestedBy
+9. Make setmessage ownable, using require
+10. Update setmessage to use modifier
+11. Create payable requestMessage with newMessage, value check against new var currentMessageRequest
+12. Check msg.value and revert if < currentMessageRequest
+13. Update setMessage to use currentMessageRequest, rever currentMessageRequest
+14. Force requestMessage to have > 0 wei
+15. Demonstrate setting message rules
+16. Show balance of contract with getBalance, though not totally necessary outside of JS
+17. Tuple return function for getcurrent ownable
